@@ -47,13 +47,17 @@ namespace ContactTracingProfile
                     sw.WriteLine(label10.Text + "" + textBox7.Text);
                     sw.WriteLine(label8.Text + "" + textBox6.Text);
                     sw.WriteLine(label9.Text + "" + G);
-                    sw.WriteLine("Check the list below if you ever experience the said situation/s.");
-                    sw.WriteLine(C3);
-                    sw.WriteLine(C4);
-                    sw.WriteLine(C1);
-                    sw.WriteLine(C2);
-                    sw.WriteLine(C5);
-
+                    sw.WriteLine("I have the following:");
+                    if (checkBox1.Checked==true)
+                    { sw.WriteLine(C1); }
+                    if (checkBox2.Checked == true)
+                    { sw.WriteLine(C2); }
+                    if (checkBox3.Checked == true)
+                    { sw.WriteLine(C3); }
+                    if (checkBox4.Checked == true)
+                    { sw.WriteLine(C4); }
+                    if (checkBox5.Checked == true)
+                    { sw.WriteLine(C5); }
 
                     sw.Close();
                     MessageBox.Show("Thank you!", "Success!", MessageBoxButtons.OK);
@@ -212,6 +216,7 @@ namespace ContactTracingProfile
             if (checkBox1.Checked == true)
             {
                 C1 = "I have symptoms like coughing ,fever, sneezing and headache.";
+
             }
         }
 
@@ -229,6 +234,11 @@ namespace ContactTracingProfile
             {
                 C5 = "I am fully vaccinated.";
             }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

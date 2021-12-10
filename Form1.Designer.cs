@@ -299,22 +299,23 @@ namespace ContactTracingProfile
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.DarkGray;
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
-            this.flowLayoutPanel1.Controls.Add(this.label11);
             this.flowLayoutPanel1.Controls.Add(this.checkBox4);
+            this.flowLayoutPanel1.Controls.Add(this.label11);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox3);
             this.flowLayoutPanel1.Controls.Add(this.checkBox1);
-            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Controls.Add(this.checkBox5);
+            this.flowLayoutPanel1.Controls.Add(this.checkBox2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 320);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(432, 112);
             this.flowLayoutPanel1.TabIndex = 29;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(3, 3);
+            this.checkBox3.Location = new System.Drawing.Point(3, 28);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(222, 19);
             this.checkBox3.TabIndex = 22;
@@ -325,7 +326,7 @@ namespace ContactTracingProfile
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(231, 0);
+            this.label11.Location = new System.Drawing.Point(198, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 13);
             this.label11.TabIndex = 19;
@@ -334,7 +335,7 @@ namespace ContactTracingProfile
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(3, 28);
+            this.checkBox4.Location = new System.Drawing.Point(3, 3);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(189, 19);
             this.checkBox4.TabIndex = 23;
@@ -358,7 +359,7 @@ namespace ContactTracingProfile
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(3, 78);
+            this.checkBox2.Location = new System.Drawing.Point(138, 78);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(157, 19);
             this.checkBox2.TabIndex = 25;
@@ -370,7 +371,7 @@ namespace ContactTracingProfile
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(166, 78);
+            this.checkBox5.Location = new System.Drawing.Point(3, 78);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(129, 19);
             this.checkBox5.TabIndex = 26;
